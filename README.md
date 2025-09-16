@@ -30,17 +30,6 @@ Evite os canos e tente marcar o maior número de pontos possível.
 
 Quando der Game Over, clique em Restart para jogar novamente.
 
-🔧 Estrutura do projeto
-MarioJump/
-│
-├── index.html      # Estrutura principal
-├── style.css       # Estilos e animações
-├── script.js       # Lógica do jogo (pulo, colisão, pontuação)
-├── mario.gif       # Sprite do Mario
-├── pipe.png        # Imagem do cano
-├── clouds.png      # Imagem das nuvens
-└── game-over.png   # Imagem do Mario ao perder
-
 💡 Melhorias futuras
 
 Adicionar sons (pulo, coin, game over).
