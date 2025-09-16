@@ -1,8 +1,6 @@
-<!-- opcional: coloque uma imagem do jogo -->
-
 Mario Jump é um jogo simples estilo endless runner inspirado no Mario, feito com HTML, CSS e JavaScript. O objetivo é controlar o Mario, pular sobre os canos e tentar sobreviver o máximo possível, aumentando a pontuação.
 
-Funcionalidades
+🎮 Funcionalidades
 
 Pulo com animação suave do Mario.
 
@@ -14,7 +12,7 @@ Botão de restart para jogar novamente sem atualizar a página.
 
 Cenário com nuvens e fundo animado.
 
-Tecnologias
+🛠 Tecnologias
 
 HTML5 – Estrutura do jogo.
 
@@ -22,7 +20,7 @@ CSS3 – Estilização e animações.
 
 JavaScript – Lógica do jogo (pulo, colisão, pontuação).
 
-Como jogar
+🚀 Como jogar
 
 Abra o arquivo index.html em qualquer navegador moderno.
 
@@ -32,7 +30,7 @@ Evite os canos e tente marcar o maior número de pontos possível.
 
 Quando der Game Over, clique em Restart para jogar novamente.
 
-Estrutura do projeto
+🔧 Estrutura do projeto
 MarioJump/
 │
 ├── index.html      # Estrutura principal
@@ -43,7 +41,7 @@ MarioJump/
 ├── clouds.png      # Imagem das nuvens
 └── game-over.png   # Imagem do Mario ao perder
 
-Melhorias futuras
+💡 Melhorias futuras
 
 Adicionar sons (pulo, coin, game over).
 
@@ -53,7 +51,7 @@ Placar online ou local storage para recordes.
 
 Controles para dispositivos móveis.
 
-Atribuição
+🎓 Atribuição
 
 Este projeto foi inspirado no tutorial "Como criar um jogo SIMPLES usando JavaScript e HTML" do canal Manual do Dev
 . Agradeço pela excelente didática e pelos ensinamentos compartilhados.
