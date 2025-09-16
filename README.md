@@ -1,3 +1,6 @@
+
+![Imagem do WhatsApp de 2025-09-16 à(s) 17 56 02_1064c09a](https://github.com/user-attachments/assets/8ec928f1-5c1f-4ac2-8d3b-02d80373a127)
+
 Mario Jump é um jogo simples estilo endless runner inspirado no Mario, feito com HTML, CSS e JavaScript. O objetivo é controlar o Mario, pular sobre os canos e tentar sobreviver o máximo possível, aumentando a pontuação.
 
 🎮 Funcionalidades
