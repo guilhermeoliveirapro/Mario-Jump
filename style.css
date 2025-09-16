@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(35, 160, 35);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipeanimation 1.5s infinite linear;
+}
+
+.mario {
+    width: 150px;
+    position: absolute; 
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;    
+}
+
+.clouds {
+    position: absolute;
+    width: 550px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+.score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000;
+}
+
+@keyframes pipeanimation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+
+    0% {
+        bottom: 0;
+    }
+
+    5% {
+        bottom: 10px;
+    }
+  
+    10% {
+        bottom: 30px;
+    }
+
+    15% {
+        bottom: 50px;
+    }
+
+    20% {
+        bottom: 70px;
+    }
+
+    25% {
+        bottom: 90px;
+    }
+
+    30% {
+        bottom: 110px;
+    }
+
+    35% {
+        bottom: 130px;
+    }
+
+    40% {
+        bottom: 150px;
+    }
+
+    45% {
+        bottom: 170px;
+    }
+
+    50% {
+        bottom: 200px;
+    }
+
+    55% {
+        bottom: 160px;
+    }
+
+    60% {
+        bottom: 140px;
+    }
+
+    65% {
+        bottom: 120px;
+    }
+
+    70% {
+        bottom: 100px;
+    }
+
+    75% {
+        bottom: 80px;
+    }
+
+    80% {
+        bottom: 60px;
+    }
+
+    85% {
+        bottom: 40px;
+    }
+
+    90% {
+        bottom: 20px;
+    }
+
+    95% {
+        bottom: 10px;
+    }
+
+    100% {
+        bottom: 0;  
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+    to {
+        right: 100%;
+    }
+}
