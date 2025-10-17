@@ -7,16 +7,10 @@ let counted = false;
 
 const jump = () => {
     mario.classList.add('jump');
-
-    setTimeout(() => {
-
-        mario.classList.remove('jump');
-
-    }, 500);
+    setTimeout(() => mario.classList.remove('jump'), 500);  
 }
 
 const loop = setInterval(() => {
-
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
@@ -30,7 +24,6 @@ const loop = setInterval(() => {
         counted = false;
     }
 
-    score++;
     scoreElement.textContent = 'Score: ' + score;
 
     if (pipePosition <= 120 && pipePosition >0 && marioPosition <80) {
@@ -45,9 +38,9 @@ const loop = setInterval(() => {
         mario.style.width ='75px'
         mario.style.marginLeft ='50px'
         
-        clearInterval(loop)
-
         scoreElement.textContent = 'Game Over - Score: ' + score;
+
+        clearInterval(loop)
     }
 
 }, 10)
