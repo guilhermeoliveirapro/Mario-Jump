@@ -48,6 +48,29 @@
     text-shadow: 2px 2px 4px #000;
 }
 
+#restart-btn {
+    position: absolute;
+    color: #000000;
+    font: Arial;
+    top: 40%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 24px 30px;
+    background: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 35px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    display: none;
+    transition: background 0.2s ease;
+}
+
+#restart-btn:hover {
+    background: #ffdb4d;
+}
+
 @keyframes pipeanimation {
     from {
         right: -80px;
