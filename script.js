@@ -1,6 +1,7 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const scoreElement = document.querySelector('.score');
+const restartBtn = document.querySelector('#restart-btn');
 
 let score = 0;
 let counted = false; 
@@ -23,11 +24,11 @@ const loop = setInterval(() => {
     if (pipePosition > 100) {
         counted = false;
     }
-
+    
+    score++;
     scoreElement.textContent = 'Score: ' + score;
 
     if (pipePosition <= 120 && pipePosition >0 && marioPosition <80) {
-
         pipe.style.animation = 'none';
         pipe.style.left = `${pipePosition}px`
 
@@ -37,12 +38,17 @@ const loop = setInterval(() => {
         mario.src ='game-over.png'
         mario.style.width ='75px'
         mario.style.marginLeft ='50px'
-        
+
         scoreElement.textContent = 'Game Over - Score: ' + score;
+
+        restartBtn.style.display = 'block';
 
         clearInterval(loop)
     }
-
 }, 10)
 
 document.addEventListener('keydown', jump); 
+
+function restart(){
+    location.reload();
+}
